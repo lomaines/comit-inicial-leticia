@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edit_cor1"
+    tools:context=".etActiv"
+    tools:layout_editor_absoluteX="11dp"
+    tools:layout_editor_absoluteY="1dp">
+
+  <Button
+      android:id="@+id/btVolt"
+      android:layout_width="149dp"
+      android:layout_height="51dp"
+
+      android:layout_marginStart="38dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="22dp"
+      android:onClick="voltar"
+      android:text="VOLTAR"
+      app:background="@color/dourado"
+      app:backgroundTint="@color/dourado"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/idResult" />
+
+  <Button
+      android:id="@+id/btComp"
+      android:layout_width="161dp"
+      android:layout_height="53dp"
+      android:layout_marginStart="25dp"
+      android:layout_marginEnd="38dp"
+      android:layout_marginBottom="20dp"
+      android:onClick="compartilhar"
+      android:text="COMPARTILHAR"
+      app:background="@color/dourado"
+      app:backgroundTint="@color/dourado"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/btVolt" />
+
+  <TextView
+      android:id="@+id/tvOb3"
+      android:layout_width="269dp"
+      android:layout_height="45dp"
+      android:layout_marginTop="18dp"
+      android:background="@drawable/edit_bg"
+      android:fontFamily="monospace"
+      android:gravity="center_vertical"
+      android:text="OBSIDADE GRAU III "
+      android:textAlignment="center"
+      android:textColor="#000000"
+      android:textSize="15sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvOb2" />
+
+  <TextView
+      android:id="@+id/tvOb2"
+      android:layout_width="269dp"
+      android:layout_height="45dp"
+      android:layout_marginTop="18dp"
+      android:background="@drawable/edit_bg"
+      android:fontFamily="monospace"
+      android:gravity="center_vertical"
+      android:text="OBESIDADE GRAU II "
+      android:textAlignment="center"
+      android:textColor="#000000"
+      android:textSize="15sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvOb1" />
+
+  <TextView
+      android:id="@+id/tvOb1"
+      android:layout_width="269dp"
+      android:layout_height="45dp"
+      android:layout_marginTop="18dp"
+      android:background="@drawable/edit_bg"
+      android:fontFamily="monospace"
+      android:gravity="center_vertical"
+      android:text="OBESIDADE GRAU I "
+      android:textAlignment="center"
+      android:textColor="#000000"
+      android:textSize="15sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvSobre" />
+
+  <TextView
+      android:id="@+id/tvSobre"
+      android:layout_width="269dp"
+      android:layout_height="45dp"
+      android:layout_marginTop="18dp"
+      android:background="@drawable/edit_bg"
+      android:fontFamily="monospace"
+      android:gravity="center_vertical"
+      android:text="SOBREPESO "
+      android:textAlignment="center"
+      android:textColor="#000000"
+      android:textSize="15sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvNorm" />
+
+  <TextView
+      android:id="@+id/tvNorm"
+      android:layout_width="269dp"
+      android:layout_height="45dp"
+      android:layout_marginTop="18dp"
+      android:background="@drawable/edit_bg"
+      android:fontFamily="monospace"
+      android:gravity="center_vertical"
+      android:text="PESO NORMAL  "
+      android:textAlignment="center"
+      android:textColor="#000000"
+      android:textSize="15sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvMag" />
+
+  <TextView
+      android:id="@+id/tvMag"
+      android:layout_width="269dp"
+      android:layout_height="45dp"
+      android:layout_marginTop="18dp"
+      android:background="@drawable/edit_bg"
+      android:fontFamily="monospace"
+      android:gravity="center_vertical"
+      android:text="MAGREZA "
+      android:textAlignment="center"
+      android:textColor="#050505"
+      android:textSize="15sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+  <TextView
+      android:id="@+id/idResult"
+      android:layout_width="335dp"
+      android:layout_height="103dp"
+      android:layout_marginStart="58dp"
+      android:layout_marginEnd="52dp"
+      android:layout_marginBottom="8dp"
+      android:background="@drawable/edit_cor2"
+      android:gravity="center_vertical"
+      android:textAlignment="center"
+      app:layout_constraintBottom_toTopOf="@+id/btComp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.588"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <ImageView
+      android:id="@+id/imageView2"
+      android:layout_width="561dp"
+      android:layout_height="136dp"
+      android:layout_marginTop="4dp"
+      android:layout_marginBottom="17dp"
+      app:layout_constraintBottom_toTopOf="@+id/tvMag"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@mipmap/lele" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
